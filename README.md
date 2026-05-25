@@ -10,7 +10,7 @@ Página web interactiva que aplica la **serie de Fibonacci** para modelar el cre
 
 ## 🚀 Ver el proyecto
 
-- **Repositorio:** [github.com/tu-usuario/desafio-fibonacci-primos](#)
+- **Repositorio:** [github.com/tu-usuario/desafio-fibonacci-primos](https://github.com/silpanchito/fibbo-naturaleza)
 - **Página publicada:** [tu-usuario.github.io/desafio-fibonacci-primos](https://silpanchito.github.io/fibbo-naturaleza/)
 
 ---
