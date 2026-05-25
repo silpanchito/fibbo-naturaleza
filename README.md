@@ -1,7 +1,6 @@
 # 🌿 Fibonacci en el Diseño Natural
 
 **Desafío Web · Matemáticas que resuelven problemas**  
-INF-111 · Universidad Mayor de San Andrés (UMSA) · 2025
 
 ---
 
@@ -12,7 +11,7 @@ Página web interactiva que aplica la **serie de Fibonacci** para modelar el cre
 ## 🚀 Ver el proyecto
 
 - **Repositorio:** [github.com/tu-usuario/desafio-fibonacci-primos](#)
-- **Página publicada:** [tu-usuario.github.io/desafio-fibonacci-primos](#)
+- **Página publicada:** [tu-usuario.github.io/desafio-fibonacci-primos](https://silpanchito.github.io/fibbo-naturaleza/)
 
 ---
 
