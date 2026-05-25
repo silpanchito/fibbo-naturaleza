@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fibonacci en el Diseño Natural</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ==================== ENCABEZADO / PORTADA ==================== -->
+  <header class="portada">
+    <div class="portada-contenido">
+      <span class="etiqueta-tema">Fibonacci en la Naturaleza</span>
+      <h1 class="titulo-principal">El Código Oculto<br /><em>de las Plantas</em></h1>
+      <p class="subtitulo">
+        Descubre cómo la serie de Fibonacci explica los patrones de crecimiento
+        en flores, hojas y ramas del mundo natural.
+      </p>
+      <p class="nombre-estudiante">Sarahy Anelis Chiri &mdash; INF-113 &bull; UMSA</p>
+    </div>
+
+    <div class="portada-imagen">
+      <img src="Fibonacci spiral.jpg" alt="Espiral de Fibonacci" class="imagen-real">
+    </div>
+  </header>
+
+  <!-- ==================== NAVEGACIÓN ==================== -->
+  <nav class="barra-nav">
+    <a href="#contexto">Contexto</a>
+    <a href="#algoritmo">Algoritmo</a>
+    <a href="#calculadora">Calculadora</a>
+    <a href="#galeria">Galería</a>
+    <a href="#conclusion">Conclusión</a>
+  </nav>
+
+  <!-- ==================== SECCIÓN: CONTEXTO DEL PROBLEMA ==================== -->
+  <section id="contexto" class="seccion seccion-clara">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">¿Qué problema real resolvemos?</h2>
+
+      <div class="columnas-contexto">
+        <div class="columna-texto">
+          <p>
+            En la naturaleza, las plantas no crecen de forma aleatoria. 
+            Sus hojas, pétalos y ramas siguen un patrón matemático preciso 
+            conocido como la <strong>serie de Fibonacci</strong>, que les permite 
+            maximizar la captación de luz solar y optimizar el espacio disponible.
+          </p>
+          <p>
+            Este proyecto analiza cómo se manifiesta dicha serie en el 
+            crecimiento de niveles de una planta: cada nuevo nivel de ramas 
+            sigue exactamente la progresión 1, 1, 2, 3, 5, 8, 13…
+          </p>
+          <p>
+            Comprender este patrón permite a botánicos, diseñadores y arquitectos 
+            recrear estructuras naturales eficientes en sus proyectos.
+          </p>
+        </div>
+
+        <div class="columna-imagen">
+          <img src="sacred geometry in nature.jpg" alt="Geometría sagrada en la naturaleza" class="imagen-real">
+          <p class="pie-imagen">Ejemplo visual del patrón en la naturaleza</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECCIÓN: EXPLICACIÓN DEL ALGORITMO ==================== -->
+  <section id="algoritmo" class="seccion seccion-oscura">
+    <div class="contenedor">
+      <h2 class="titulo-seccion titulo-claro">¿Cómo funciona el algoritmo?</h2>
+
+      <div class="columnas-algoritmo">
+        <div class="caja-algoritmo">
+          <div class="numero-paso">01</div>
+          <h3>La Serie de Fibonacci</h3>
+          <p>
+            Empieza con los valores <strong>0</strong> y <strong>1</strong>. 
+            Cada número siguiente es la suma de los dos anteriores:
+            <br />0 → 1 → 1 → 2 → 3 → 5 → 8 → 13 → 21…
+          </p>
+        </div>
+
+        <div class="caja-algoritmo">
+          <div class="numero-paso">02</div>
+          <h3>Aplicación en Plantas</h3>
+          <p>
+            Cada <strong>nivel de crecimiento</strong> de una planta representa 
+            un término de la serie. El número de ramas en cada nivel sigue 
+            exactamente esta progresión matemática.
+          </p>
+        </div>
+
+        <div class="caja-algoritmo">
+          <div class="numero-paso">03</div>
+          <h3>El Algoritmo en JavaScript</h3>
+          <p>
+            Usamos dos variables simples (<code>a</code> y <code>b</code>) y un 
+            ciclo <code>for</code>. Sin arreglos: solo sumas sucesivas. El resultado 
+            se muestra en pantalla usando <code>getElementById()</code>.
+          </p>
+        </div>
+      </div>
+
+      <div class="visualizacion-serie">
+        <span class="termino-fib">0</span>
+        <span class="flecha-fib">+</span>
+        <span class="termino-fib">1</span>
+        <span class="flecha-fib">→</span>
+        <span class="termino-fib">1</span>
+        <span class="flecha-fib">→</span>
+        <span class="termino-fib">2</span>
+        <span class="flecha-fib">→</span>
+        <span class="termino-fib">3</span>
+        <span class="flecha-fib">→</span>
+        <span class="termino-fib">5</span>
+        <span class="flecha-fib">→</span>
+        <span class="termino-fib">8</span>
+        <span class="flecha-fib">→</span>
+        <span class="termino-fib">...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECCIÓN: FORMULARIO / CALCULADORA ==================== -->
+  <section id="calculadora" class="seccion seccion-clara">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Calculadora de Crecimiento</h2>
+      <p class="descripcion-seccion">
+        Ingresa la cantidad de niveles de crecimiento de tu planta y 
+        observa cómo la serie de Fibonacci describe cada etapa.
+      </p>
+
+      <div class="formulario-contenedor">
+        <div class="campo-formulario">
+          <label for="niveles">Número de niveles de crecimiento:</label>
+          <input type="number" id="niveles" placeholder="Ej: 10" min="1" max="30" />
+          <small>Ingresa un valor entre 1 y 30</small>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="nombre-planta">Nombre de la planta (opcional):</label>
+          <input type="text" id="nombre-planta" placeholder="Ej: Girasol, Helecho, Rosa..." />
+        </div>
+
+        <button id="btn-calcular" onclick="calcularFibonacci()">
+          🌿 Calcular crecimiento
+        </button>
+      </div>
+
+      <div id="resultado" class="resultado-contenedor" style="display: none;">
+        <div id="resultado-resumen" class="resultado-resumen"></div>
+        <div class="tabla-contenedor">
+          <table>
+            <thead>
+              <tr>
+                <th>Nivel</th>
+                <th>Ramas en este nivel</th>
+                <th>Total de ramas acumuladas</th>
+                <th>Representación visual</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-fibonacci"></tbody>
+          </table>
+        </div>
+        <div id="resultado-total" class="resultado-total"></div>
+      </div>
+
+      <div id="mensaje-error" class="mensaje-error" style="display: none;"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SECCIÓN: GALERÍA DE IMÁGENES ==================== -->
+  <section id="galeria" class="seccion seccion-media">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Fibonacci en la Naturaleza</h2>
+      <p class="descripcion-seccion">
+        Ejemplos visuales del patrón en distintas plantas y estructuras naturales.
+      </p>
+
+      <div class="galeria-grid">
+
+        <!-- IMAGEN 1 -->
+        <div class="galeria-item">
+          <img src="sacred geometry in nature.jpg" alt="Girasol" class="imagen-real galeria-img">
+          <div class="galeria-info">
+            <h4>Girasol</h4>
+            <p>Las semillas forman espirales en cantidades de Fibonacci: 34 y 55.</p>
+          </div>
+        </div>
+
+        <!-- IMAGEN 2 -->
+        <div class="galeria-item">
+          <img src="piñapino.jpg" alt="Piña de pino" class="imagen-real galeria-img">
+          <div class="galeria-info">
+            <h4>Piña de pino</h4>
+            <p>Sus escamas forman 8 espirales en un sentido y 13 en el otro.</p>
+          </div>
+        </div>
+
+        <!-- IMAGEN 3 -->
+        <div class="galeria-item">
+          <img src="a-beautifully-spiraling-fern-leaf-up-close-ai-generated-photo.jpg" alt="Helecho" class="imagen-real galeria-img">
+          <div class="galeria-info">
+            <h4>Helecho</h4>
+            <p>La espiral de sus hojas jóvenes sigue la proporción áurea.</p>
+          </div>
+        </div>
+
+        <!-- IMAGEN 4 -->
+        <div class="galeria-item">
+          <img src="descarga (3).jpg" alt="Rosa" class="imagen-real galeria-img">
+          <div class="galeria-info">
+            <h4>Rosa</h4>
+            <p>Sus pétalos se disponen en espirales con números de Fibonacci.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECCIÓN: CONCLUSIÓN ==================== -->
+  <section id="conclusion" class="seccion seccion-clara">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Conclusión</h2>
+
+      <div class="columnas-conclusion">
+        <div class="conclusion-texto">
+          <p>
+            La serie de Fibonacci no es solo una curiosidad matemática: 
+            es el <strong>lenguaje con el que la naturaleza optimiza el espacio</strong>. 
+            Las plantas que siguen este patrón logran que sus hojas no se tapen 
+            entre sí, maximizando la exposición solar de cada una.
+          </p>
+          <p>
+            Este proyecto demuestra que con apenas dos variables y un ciclo 
+            repetitivo, podemos modelar comportamientos observados en millones 
+            de especies vegetales. La matemática no describe la naturaleza: 
+            <em>la naturaleza habla matemática</em>.
+          </p>
+          <p>
+            Aplicaciones prácticas de este conocimiento incluyen el diseño 
+            arquitectónico biofílico, la optimización de paneles solares y 
+            el modelado de cultivos agrícolas.
+          </p>
+        </div>
+        <!-- Espacio para imagen de conclusión — pon tu imagen aquí -->
+         <div class="conclusion-imagen">
+            <img src="Fibonacci numbers in nature.jpg" alt="Fibonacci en la naturaleza" class="imagen-real">
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PIE DE PÁGINA ==================== -->
+  <footer class="pie-pagina">
+    <p>
+      Desafío Web &bull; Fibonacci en el Diseño Natural &bull; INF-113 &bull; 2026
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
